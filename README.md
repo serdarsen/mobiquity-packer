@@ -1,5 +1,5 @@
 # Mobiquity Packer
-Mobiquity Packer is an implementation of my interview assignment given by Mobiquity. The Application calculates to pack the items with the highest cost and the least weight within the capacity, max item size, and cost. You can find detailed information in [Packaging Challenge.pdf](./Packaging Challenge.pdf). 
+Mobiquity Packer is an implementation of my interview assignment given by Mobiquity. The Application calculates to pack the items with the highest cost and the least weight within the capacity, max item size, and cost. You can find detailed information in [packaging_challenge.pdf](packaging_challenge.pdf).
 
 ## Implementation
 * To be able to analyze in detail, I broke down the problem into smaller pieces.
