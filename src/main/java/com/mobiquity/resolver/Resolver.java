@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 /**
  * Resolver calculates to pack the {@link Item}s with the highest cost and
- * the least weight within capacity using bottom up dynamic programming.
+ * the least weight within capacity using the Tabulation algorithm of the Dynamic Programming.
  *
  * @author Serdar ŞEN
  */
@@ -30,14 +30,14 @@ public class Resolver {
     /**
      * Extract the package capacity and the {@link Item}s from {@link Container}.
      * Calculates to pack the items with the highest cost and
-     * the least weight within capacity and max item size.
+     * the least weight within the capacity and max item size.
      * @param container the current container that contains the capacity and items.
      * @return a string of the selected item indexes separated by comma.
      */
     public String resolve(Container container){
         createCapacity(container.getPackageCapacity());
         createIndexesWeightsAndCosts(container.getItems());
-        doBottomUpCalculation();
+        doTabulation();
 
         return output;
     }
@@ -60,7 +60,7 @@ public class Resolver {
         }
     }
 
-    private int doBottomUpCalculation() {
+    private int doTabulation() {
         // base checks
         if (capacity <= 0 || costs.length == 0 || weights.length != costs.length) {
             return 0;

@@ -22,7 +22,7 @@ public class Packer {
      * Resolve using resolver
      * @param filePath
      * @return a string of the selected item indexes of each package separated by comma and line
-     * @throws APIException an exception occurred during parsing
+     * @throws APIException an exception occurred during packing
      */
     public static String pack(String filePath) throws APIException {
         Parser parser = new Parser();

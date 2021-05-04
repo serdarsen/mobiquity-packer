@@ -1,7 +1,7 @@
 package com.mobiquity.exception;
 
 /**
- * Contains APIException messages.
+ * Contains {@link APIException} messages.
  *
  * @author Serdar ŞEN
  */
